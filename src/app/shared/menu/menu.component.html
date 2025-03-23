@@ -3,30 +3,30 @@
     class=" p-3 border-t lg:border-0  {{activeItem===1?'text-emerald-500':'text-black'}} relative"><a
       [routerLink]="['']">Home</a>
     <img *ngIf="activeItem===1" class="hidden lg:block absolute bottom-0 left-0"
-      src="../../../assets/shapes/shape-3.webp" alt="">
+      src="./assets/shapes/shape-3.webp" alt="">
   </li>
   <li (click)="selectItem(2)"
     class="relative p-3 border-t lg:border-0 {{activeItem===2?'text-emerald-500':'text-black'}} "><a
       [routerLink]="['all-course']">All Course</a>
     <img *ngIf="activeItem===2" class="hidden lg:block absolute bottom-0 left-0"
-      src="../../../assets/shapes/shape-3.webp" alt="">
+      src="./assets/shapes/shape-3.webp" alt="">
   </li>
   <li (click)="selectItem(3)"
     class="relative p-3 border-t lg:border-0 {{activeItem===3?'text-emerald-500':'text-black'}} "><a
       [routerLink]="['pages']">Pages</a>
     <img *ngIf="activeItem===3" class="hidden lg:block absolute bottom-0 left-0"
-      src="../../../assets/shapes/shape-3.webp" alt="">
+      src="./assets/shapes/shape-3.webp" alt="">
   </li>
   <li (click)="selectItem(4)"
     class="relative p-3 border-t lg:border-0 {{activeItem===4?'text-emerald-500':'text-black'}} "><a
       [routerLink]="['blog']">Blog</a>
     <img *ngIf="activeItem===4" class="hidden lg:block absolute bottom-0 left-0"
-      src="../../../assets/shapes/shape-3.webp" alt="">
+      src="./assets/shapes/shape-3.webp" alt="">
   </li>
   <li (click)="selectItem(5)"
     class="relative p-3 border-t lg:border-0 {{activeItem===5?'text-emerald-500':'text-black'}} "><a
       [routerLink]="['contact']">Contact</a>
     <img *ngIf="activeItem===5" class="hidden lg:block absolute bottom-0 left-0"
-      src="../../../assets/shapes/shape-3.webp" alt="">
+      src="./assets/shapes/shape-3.webp" alt="">
   </li>
 </ul>
