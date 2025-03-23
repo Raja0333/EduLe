@@ -1,0 +1,21 @@
+<div class="container mx-auto  ">
+
+    <p class="text-xl mb-3 text-emerald-500 font-medium text-center {{this.algn==='C'?'text-center':'md:text-left'}}">
+        <span class="text-slate-900 hover:text-emerald-500 cursor-pointer transition-all duration-300"
+            *ngIf="this.commonHeading ==='true'">Home
+        </span><span *ngIf="this.commonHeading ==='true'" class="text-slate-900 ">//</span>
+        {{this.subHeading}}
+    </p>
+    <h2 class="text-3xl lg:text-4xl font-medium text-center {{this.algn==='C'?'text-center':'md:text-left'}}">
+        <span class="relative {{specialHeadingID==1?'text-emerald-500':''}}">{{this.headingText1}} <span
+                *ngIf="specialHeadingID==1" class="absolute right-3 -bottom-3 w-24 lg:w-36"><img
+                    src="../../../assets/shapes/shape-4.webp" alt=""></span></span>
+        <span class="relative {{specialHeadingID==2?'text-emerald-500':''}}">{{this.headingText2}} <span
+                *ngIf="specialHeadingID==2" class="absolute right-3 -bottom-3 w-24 lg:w-36 "><img
+                    src="../../../assets/shapes/shape-4.webp" alt=""></span></span>
+        <span class="relative {{specialHeadingID==3?'text-emerald-500':''}}">{{this.headingText3}} <span
+                *ngIf="specialHeadingID==3" class="absolute right-3 -bottom-3 w-24 lg:w-36"><img
+                    src="../../../assets/shapes/shape-4.webp" alt=""></span></span>
+    </h2>
+
+</div>

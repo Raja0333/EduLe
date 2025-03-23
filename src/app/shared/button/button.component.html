@@ -1,0 +1,17 @@
+<button class="relative group transition-all duration-500 overflow-clip
+{{this.animation==='F'&& this.shades==='D'?' hover:bg-emerald-50':
+this.animation==='F'&& this.shades==='L'? ' hover:bg-emerald-500':
+this.animation==='F'&& this.shades==='W'?' hover:bg-emerald-500':''}}
+{{this.shades==='D'&& this.size!=='L'?'border bg-emerald-500 text-emerald-50  border-emerald-500 hover:text-slate-700 ':
+this.shades==='D' && this.size==='L'?'border bg-emerald-500 text-emerald-50  border-emerald-500 ':
+this.shades==='L'?'border bg-emerald-50 text-slate-700 border-emerald-500  hover:text-emerald-50 ':
+this.shades==='W'?' border bg-white text-emerald-500  border-emerald-500 hover:text-emerald-50':'text-emerald-500 hover:text-slate-700'}}
+{{this.size==='S'?'px-5 py-2 rounded-lg  font-medium text-md':
+this.size==='M'?'px-7 py-3 rounded-lg font-medium text-lg':'px-4 lg:px-8 py-4 rounded-lg font-semibold text-lg'}}">
+    <span class="z-30 relative">{{this.name}}</span>
+    <span *ngIf="this.shades!=='NA'&&  this.animation==='C'" class="absolute top-[50%] z-20 left-[50%] aspect-square w-[20%] rounded-full
+     -translate-x-[50%] -translate-y-[50%] transition-all duration-1000 group-hover:w-[200%] opacity-0 group-hover:opacity-100
+     {{this.shades==='D'?this.size==='L'?'bg-slate-800 ':'bg-emerald-50':' bg-emerald-500'}}">
+
+    </span>
+</button>
